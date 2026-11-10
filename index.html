@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Bagas Ariefia Pribady — Human Resource</title>
+    <meta
+      name="description"
+      content="Human Resource professional who builds HR systems to connect people, processes, and business goals."
+    />
+    <meta name="theme-color" content="#e6ebf3" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="brand"><i>BAP</i><span>Bagas Ariefia Pribady</span></div>
+    <button class="hi" id="bHi">Say Hi!</button>
+    <main class="stage" id="stage"><div class="book" id="book"></div></main>
+
+    <nav class="bar" aria-label="Book navigation">
+      <button id="bCover" title="Back to cover" aria-label="Back to cover">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z" />
+          <path d="M4 21V5" /></svg
+        ><span class="lbl">Cover</span>
+      </button>
+      <button
+        id="bPrev"
+        class="round"
+        title="Previous page (←)"
+        aria-label="Previous page"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <div class="status" id="status" role="status">Cover</div>
+      <button
+        id="bNext"
+        class="round"
+        title="Next page (→)"
+        aria-label="Next page"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+      <button
+        id="bToc"
+        title="Table of contents"
+        aria-label="Table of contents"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path
+            d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"
+          /></svg
+        ><span class="lbl">Contents</span>
+      </button>
+    </nav>
+    <noscript>This interactive book needs JavaScript enabled.</noscript>
+
+    <script src="js/config.js"></script>
+    <script src="js/pages.js"></script>
+    <script src="js/book.js"></script>
+  </body>
+</html>
